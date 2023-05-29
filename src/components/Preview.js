@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import './preview.css';
 
 class Preview extends Component {
   render() {

@@ -73,10 +73,42 @@ select {
   }
 }
 
+:root {
+  --header-text: #f3f4f6;
+  --main-text: #d1d5db;
+  --background: #111827;
+}
+
 /* start */
+
+body {
+  background-color: var(--background);
+}
 
 .app {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+}
+
+.form {
+  background-color: #1f2937;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.preview {
+  background-color: #1f2937;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+p {
+  color: var(--main-text);
+}
+
+h1 {
+  color: var(--header-text);
 }
