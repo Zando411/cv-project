@@ -4,7 +4,7 @@ class Form extends Component {
   render() {
     return (
       <div className="form">
-        <h1>Hello World1</h1>
+        <h1>Fill out your info</h1>
       </div>
     );
   }

@@ -4,7 +4,7 @@ class Preview extends Component {
   render() {
     return (
       <div className="preview">
-        <h1>Hello World</h1>
+        <h1>Resume Preview</h1>
       </div>
     );
   }
