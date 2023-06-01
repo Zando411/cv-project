@@ -77,39 +77,107 @@ select {
   --header-text: #f3f4f6;
   --main-text: #d1d5db;
   --background: #111827;
+  --secondary: #1f2937;
 }
 
 /* start */
 
 body {
   background-color: var(--background);
+  font-family: 'Inter', sans-serif;
+  color: var(--main-text);
 }
 
 .app {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  justify-items: center;
+  align-items: start;
 }
 
 .form {
-  background-color: #1f2937;
+  background-color: var(--secondary);
   width: 90%;
   margin-top: 10px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem;
 }
 
 .preview {
-  background-color: #1f2937;
+  background-color: var(--secondary);
   width: 90%;
   margin-top: 10px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem;
 }
 
 p {
   color: var(--main-text);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--header-text);
+}
+
+h1 {
   text-align: center;
+}
+
+label {
+  color: var(--main-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.personalInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  flex-grow: 1;
+}
+
+textarea,
+input {
+  padding: 10px 10px 10px 10px;
+  outline: none;
+  border: 1px solid var(--background);
+  border-radius: 5px;
+  background-color: var(--background);
+  transition: background-color 0.5s ease;
+  transition: border 0.5s ease;
+  color: var(--main-text);
+  flex-grow: 1;
+}
+
+textarea:focus,
+input:focus {
+  border: 1px solid var(--header-text);
+  background-color: #1f2937;
+}
+
+textarea {
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  resize: none;
+  flex-grow: 2;
 }
