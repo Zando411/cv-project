@@ -4,7 +4,7 @@ import InputField from './InputField';
 class Personal extends Component {
   render() {
     return (
-      <div className="personalWrapper">
+      <div className="wrapper">
         <h2>Personal Info</h2>
         <div className="personal">
           <div className="personalInputs">
