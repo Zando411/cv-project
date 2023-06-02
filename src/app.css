@@ -180,4 +180,60 @@ textarea {
   border-radius: 5px;
   resize: none;
   flex-grow: 2;
+  flex-basis: 100%;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.experienceInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  column-gap: 50px;
+  justify-content: center;
+  /* background-color: rgba(0, 0, 0, 10%);
+  padding: 30px; */
+  border-radius: 10px;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 50px;
+}
+
+.removeExperience {
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #f44336; /* Red color */
+  color: var(--header-text); /* White text color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeExperience:hover {
+  background-color: #f87171;
+}
+
+.addExperience {
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #34d399; /* Green color */
+  color: var(--header-text); /* White text color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wrapper {
+  width: 100%;
 }
