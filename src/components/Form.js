@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Personal from './Personal';
-import Experience from './Experience';
+import Section from './Section';
 
 class Form extends Component {
   render() {
@@ -8,7 +8,8 @@ class Form extends Component {
       <div className="form">
         <h1>Fill out your info</h1>
         <Personal />
-        <Experience />
+        <Section sectionTitle="Education" title="Degree" />
+        <Section sectionTitle="Work Experience" title="Job Title" />
       </div>
     );
   }

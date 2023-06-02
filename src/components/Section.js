@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Experience extends Component {
+class Section extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,9 +26,11 @@ class Experience extends Component {
 
   renderSections() {
     const { sections } = this.state;
+    const { title } = this.props;
+
     return sections.map((section) => (
       <div key={section.id} className="experienceInputs">
-        <input type="text" placeholder="Job Title" />
+        <input type="text" placeholder={title} />
         <div className="times">
           <input type="text" placeholder="Start Time" />
           <input type="text" placeholder="End Time" />
@@ -49,9 +51,10 @@ class Experience extends Component {
   }
 
   render() {
+    const { sectionTitle } = this.props;
     return (
       <div className="wrapper">
-        <h2>Work Experience</h2>
+        <h2>{sectionTitle}</h2>
         <div className="experience">
           {this.renderSections()}
           <button className="addExperience" onClick={this.handleAddSection}>
@@ -63,4 +66,4 @@ class Experience extends Component {
   }
 }
 
-export default Experience;
+export default Section;
